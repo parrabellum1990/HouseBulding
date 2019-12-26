@@ -1,0 +1,54 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap-grid.min.css);
+@import url(../fonts/stylesheet.css);
+@import url(reset.css);
+html,
+body {
+  font-family: Roboto, sans-serif; }
+
+.content-container {
+  max-width: 1230px;
+  margin: 0 auto; }
+
+.header {
+  border: 1px solid red; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .logo__img {
+    margin-right: 20px; }
+
+.logo-name__strong {
+  font-weight: bold;
+  font-size: 16px;
+  color: #284157; }
+
+.logo-name__normal {
+  font-size: 16px;
+  color: #284157; }
+
+.schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
+
+.schedule-wrap {
+  margin-right: 20px; }
+  .schedule-wrap__time {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #284157; }
+  .schedule-wrap__day {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #284157; }

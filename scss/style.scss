@@ -1,0 +1,66 @@
+// Импорт сетки Bootstrap
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+// Импорт шрифта Roboto
+@import '../fonts/stylesheet.css';
+// Обнуляющий файл
+@import 'reset.css';
+// Преременные
+@import 'variables';
+// Зададим текущий шрифт
+html,
+body{
+    font-family: Roboto, sans-serif;
+}
+
+// Зададим общий контейнер
+.content-container{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header{
+    border: 1px solid red;
+}
+// Стилизуем логотип
+.logo{
+    display: flex;
+    align-items: center;
+    &__img{
+        margin-right: 20px;
+    }
+}
+.logo-name{
+        &__strong{
+            font-weight: bold;
+            font-size: 16px;
+            color: $main-color-text;
+        }
+        &__normal{
+            font-size: 16px;
+            color: $main-color-text;
+        }
+    }
+
+// Время работы
+.schedule{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &__img-clock{
+    }
+}
+.schedule-wrap{
+    margin-right: 20px;
+    &__time{
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        color: $main-color-text;
+    }
+    &__day{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        color: $main-color-text;
+    }
+}
