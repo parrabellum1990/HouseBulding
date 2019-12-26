@@ -9,9 +9,6 @@ body {
   max-width: 1230px;
   margin: 0 auto; }
 
-.header {
-  border: 1px solid red; }
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,9 +43,44 @@ body {
     display: block;
     font-weight: bold;
     font-size: 16px;
-    color: #284157; }
+    color: #284157;
+    line-height: 22px; }
   .schedule-wrap__day {
     display: block;
     text-align: center;
     font-size: 16px;
-    color: #284157; }
+    color: #284157;
+    line-height: 22px; }
+
+.contact-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contact-number .contact-phone {
+    margin-right: 25px; }
+    .contact-number .contact-phone__question {
+      color: #284157;
+      font-size: 16px;
+      line-height: 22px; }
+    .contact-number .contact-phone__number {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #284157;
+      font-size: 16px;
+      line-height: 22px; }
+  .contact-number__btn {
+    color: #fff;
+    padding: 0px 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background: #fa7821;
+    background: -webkit-linear-gradient(16deg, #fa7821 87%, #f9a927 100%);
+    background: -o-linear-gradient(16deg, #fa7821 87%, #f9a927 100%);
+    background: linear-gradient(74deg, #fa7821 87%, #f9a927 100%); }
+
+.first-section {
+  background-image: url("../img/banner1.png");
+  background-size: cover;
+  background-repeat: no-repeat; }

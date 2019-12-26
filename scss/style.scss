@@ -17,9 +17,9 @@ body{
     max-width: 1230px;
     margin: 0 auto;
 }
-
+// ХЕДЕР
 .header{
-    border: 1px solid red;
+
 }
 // Стилизуем логотип
 .logo{
@@ -56,11 +56,50 @@ body{
         font-weight: bold;
         font-size: 16px;
         color: $main-color-text;
+        line-height: 22px;
     }
     &__day{
         display: block;
         text-align: center;
         font-size: 16px;
         color: $main-color-text;
+        line-height: 22px;
     }
+}
+// Контакты
+.contact-number{
+    display: flex;
+
+    .contact-phone{
+        margin-right: 25px;
+        &__question{
+            color: $main-color-text;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__number{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: $main-color-text;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    &__btn{
+        color: $secondary-color-text;
+        padding: 0px 20px;
+        font-weight: 500;
+        border-radius: 7px;
+        border: 1px solid transparent;
+        background: rgb(250,120,33);
+        background: linear-gradient(74deg, rgba(250,120,33,1) 87%, rgba(249,169,39,1) 100%);
+    }
+}
+// 1-ая секция
+.first-section {
+    background-image: url('../img/banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
