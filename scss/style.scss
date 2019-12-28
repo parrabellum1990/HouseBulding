@@ -1,11 +1,15 @@
+// Преременные
+@import 'variables';
 // Импорт сетки Bootstrap
-@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 // Импорт шрифта Roboto
 @import '../fonts/stylesheet.css';
 // Обнуляющий файл
 @import 'reset.css';
-// Преременные
-@import 'variables';
+
+
 // Зададим текущий шрифт
 html,
 body{
@@ -17,9 +21,9 @@ body{
     max-width: 1230px;
     margin: 0 auto;
 }
-// ХЕДЕР
+                                                                        // ХЕДЕР
 .header{
-
+    padding: 15px 0;
 }
 // Стилизуем логотип
 .logo{
@@ -96,10 +100,92 @@ body{
         background: linear-gradient(74deg, rgba(250,120,33,1) 87%, rgba(249,169,39,1) 100%);
     }
 }
-// 1-ая секция
+                                                                            // 1-ая секция
+// бекграунд
 .first-section {
     background-image: url('../img/banner1.png');
-    background-size: cover;
     background-repeat: no-repeat;
-    
+    background-position: center top;
+    background-size: cover;
 }
+
+// Блок текста
+.info-first-section {
+
+    // .info-first-section__title
+
+    &__title {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 65px 0 30px 0;
+    }
+    // .info-first-section__subtitle
+    &__subtitle {
+        padding-bottom: 35px;
+        line-height: 22px;
+    }
+    // .info-first-section__subtitle-second
+    &__subtitle-second {
+        padding-bottom: 215px;
+        line-height: 22px;
+    }
+    // .info-first-section__text
+    &__text {
+        line-height: 22px;
+        margin-bottom: 35px;
+    }
+}
+// Блок с формой расчёта сметы
+.payment-form{
+    margin-left: auto;
+    background-color: rgba($color: #fff, $alpha: 1.0);
+    width: 63%;
+    height: 67%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-top: 100px;
+    &__title{
+        color: $main-color-text;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+    &__pdt{
+        padding-top: 80px;
+    }
+    &__input-name, 
+    &__input-tel{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding: 8px 0;
+        text-align: center;
+        border: 1px solid $input-color;
+        color: $input-color;
+        margin-top: 20px;
+    }
+    &__btn-submit {
+        display: block;
+        margin: 0 auto;
+        padding: 12px 0;
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+                                                        // 2-ая секция
+.house-projects{
+    // пусто
+    &__title {
+    color: $main-color-text;
+    font-size: 30px;
+    font-weight: bold;
+	}
+}
+
+
+
+
+
