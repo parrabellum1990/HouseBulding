@@ -87,9 +87,9 @@
                         <p class="payment-form__title">смету на строительство</p>
                         <p class="payment-form__title">вашего дома уже сегодня</p>
                         <input class="payment-form__input-name" type="text" name="input-name" id="#"
-                            placeholder="Ваше имя">
+                            placeholder="Ваше имя" required>
                         <input class="payment-form__input-tel" type="tel" name="input-tel" id="#"
-                            placeholder="Ваш телефон">
+                            placeholder="Ваш телефон" required>
                         <button class="payment-form__btn-submit contact-number__btn" type="button" data-toggle="modal"
                             data-target="#paynebtModal">Заказать
                             смету</button>
@@ -136,8 +136,113 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col text-center mb-4">
+                    <button type="button" class="house-projects-class-btn btn btn-outline-secondary">Эконом</button>
+                    <button type="button" class="house-projects-class-btn btn btn-outline-secondary">Средний</button>
+                    <button type="button" class="house-projects-class-btn btn btn-outline-secondary">Премиум</button>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <!-- BREAD CRUMBS -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators carousel-indicators-position">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+
+
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="house-model">
+                                            <img class="house-model__img d-block w-100" src="img/house-model-1.png"
+                                                alt="...">
+                                            <h5 class="house-model__title text-center">Проект Дома Навека 1</h5>
+                                            <p class="house-model__area text-center">Площадь: 102 м2</p>
+                                            <p class="house-model__size text-center">Размеры: 10х23х5</p>
+                                            <button class="house-model__btn contact-number__btn" type="button">Подробнее
+                                                о проекте</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
